@@ -1,8 +1,27 @@
-.div,h1{
-    color: blue;
-    margin-left: 45px;
-   
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 0px 40px;
+    background: black;
+    color: aliceblue;
+
 }
-.div,p{
-    color: blueviolet;
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    justify-items: center; 
+    text-decoration: none;
+    
+}
+ul,li{
+    gap: 12px;
+    font-style: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
 }
