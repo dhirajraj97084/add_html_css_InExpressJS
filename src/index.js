@@ -3,9 +3,16 @@ const path=require('path');
 const app=express();
 const port=8082;
 
-app.use(express.static(path.join(__dirname,'../public')))
+//set hbs dynamic text
+app.set('view engine' , 'hbs');
 
-app.get('/',(req,res)=>{
+app.get('',(req,res)=>{
+   res.render('index');
+})
+
+//app.use(express.static(path.join(__dirname,'../public')))
+
+ app.get('/about',(req,res)=>{
     res.send('hello');
 })
 
